@@ -1,0 +1,58 @@
+class FibonacciSequence {
+    public static void main(String args[]) {
+      
+      int N1 = 0;
+      int N2 = 1;
+      int N3;
+      int i;
+      int counter = 5;
+     
+        //N stands for number and i stands for integer. 
+        //Counter determines how many numbers are displayed, change to show any number you desire
+       
+
+        System.out.print(N1 + " " + N2);
+     
+       
+
+        for (i = 2; i < counter; ++i) 
+        {
+            N3 = N1 + N2;
+            System.out.print(" " + N3);
+            N1 = N2;
+            N2 = N3;
+            //Is required for the code to run the Fibonacci Sequence
+        }
+             
+    }
+}
+/*v1*/
+import java.util.Scanner;
+//Import scanner so you can use user input
+class FibonacciSequence {
+    public static void main(String args[]) {
+        //Basic notation
+        Scanner scnr =new Scanner(System.in);
+        //Scanner scnr
+        System.out.println("Please input the number of terms in the fibonacci Sequence ");
+        int counter = scnr.nextInt();
+        //Allows user input
+      int N1 = 0;
+      int N2 = 1;
+      //Variables
+      System.out.print(N1 + " " + N2);
+      //Initalize
+      scnr.close();
+      //Close scanner
+      for(int i = 3; i<counter; i++){
+        int N3 = N1 + N2;
+        System.out.print(" " + N3);
+        N1 = N2;
+        N2 = N3;
+        //The Fibonacci Sequence
+      }
+             
+    }
+}
+
+//This v2 has user input automatically compared to v1
