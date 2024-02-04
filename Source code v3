@@ -1,0 +1,19 @@
+class FibonacciSequence{
+    public static void main(String[] args) {
+        int counter;
+        counter = Integer.parseInt(args[0]);
+        
+    
+    int N1 = 0;
+    int N2 = 1;
+    
+    System.out.print(N1 + " " + N2 + " ");
+    for(int i = 3; i<counter; i++){
+        int N3 = N1 + N2;
+        System.out.print(" " + N3);
+        N1 = N2;
+        N2 = N3;
+        //The Fibonacci Sequence
+      }
+    }
+}
